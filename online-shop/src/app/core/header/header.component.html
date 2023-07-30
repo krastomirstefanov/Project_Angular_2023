@@ -1,0 +1,17 @@
+<header>
+    <nav>
+        <ul *ngIf="!isLoggedIn">
+            <a routerLink="/home">Home</a>
+            <a routerLink="/catalog">Catalog</a>
+            <a routerLink="/login">Login</a>
+            <a routerLink="/register">Register</a>
+
+        </ul> 
+        <ul *ngIf="isLoggedIn">
+            <a routerLink="/home">Home</a>
+            <a routerLink="/catalog">Catalog</a>
+            <a routerLink="/cart">Cart</a>
+            <a (click)="logout()">Logout</a>
+        </ul>
+    </nav>
+</header>

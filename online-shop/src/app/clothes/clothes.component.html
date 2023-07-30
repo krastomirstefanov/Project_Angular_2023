@@ -1,0 +1,18 @@
+<div class="clothes-container">
+    <div *ngFor="let clothe of clothesList" class="clothes-name-wrapper">
+        <div class="clothes-name">
+            <a href="#" class="normal">
+                <h2>{{clothe.name}}</h2>
+            </a>
+            <div class="columns">
+                <div class="clothes-image">
+                    <img src="{{clothe.imageUrl}}" alt="Jordan T-Shirt">
+                </div>
+                <div class="clothes-info">
+                    <p>Price: ${{clothe.price}}</p>
+                    <p>Size: {{clothe.size}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
