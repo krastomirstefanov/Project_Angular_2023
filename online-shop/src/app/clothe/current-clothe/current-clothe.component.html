@@ -1,1 +1,18 @@
-<p>current-clothe works!</p>
+<div class="clothes-container" *ngIf="clothe">
+    <div class="clothes-name-wrapper">
+        <div class="clothes-name">
+                <h2>{{clothe.name}}</h2>
+            
+            <div class="columns">
+                <div class="clothes-image">
+                    <img src="{{clothe.imageUrl}}" alt="Jordan T-Shirt">
+                </div>
+                <div class="clothes-info">
+                    <p>Price: {{clothe.price}}</p>
+                    <p>Size: {{clothe.size}}</p>
+                    <button class="add-to-cart" routerLink="/cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

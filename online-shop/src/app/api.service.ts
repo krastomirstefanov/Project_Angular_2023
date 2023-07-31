@@ -14,4 +14,9 @@ export class ApiService {
     const {appUrl} = environment;
     return this.http.get<Clothe[]>(`${appUrl}/data/clothes`)
   }
+
+  getClothe(id:string) {
+    const {appUrl} = environment;
+    return this.http.get<Clothe>(`${appUrl}/data/clothes/${id}`)
+  }
 }

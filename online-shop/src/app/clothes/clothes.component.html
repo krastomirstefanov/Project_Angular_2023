@@ -1,7 +1,7 @@
 <div class="clothes-container">
     <div *ngFor="let clothe of clothesList" class="clothes-name-wrapper">
         <div class="clothes-name">
-            <a href="#" class="normal">
+            <a [routerLink]="clothe._id" class="normal">
                 <h2>{{clothe.name}}</h2>
             </a>
             <div class="columns">
