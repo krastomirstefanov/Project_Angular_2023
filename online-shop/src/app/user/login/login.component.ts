@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { UserService } from '../user.service';
 import { Router } from '@angular/router';
+import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'app-login',
@@ -11,7 +13,12 @@ export class LoginComponent {
 
   constructor(private userServise: UserService, private router: Router){}
 
-  login(email: string, password: string): void {
+  login(form: NgForm): void {
+
+    if(form.invalid) {
+      return;
+    }
+
     this.userServise.login();
     this.router.navigate(['/home'])
   }

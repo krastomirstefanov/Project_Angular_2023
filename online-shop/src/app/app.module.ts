@@ -10,6 +10,7 @@ import { ClothesComponent } from './clothes/clothes.component';
 import { HomeComponent } from './home/home.component';
 import { UserModule } from './user/user.module';
 import { ClotheModule } from './clothe/clothe.module';
+import { AppEmailDirective } from './validators/AppEmailDirective';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ClotheModule } from './clothe/clothe.module';
     AppComponent,
     MainComponent,
     ClothesComponent,
-    HomeComponent
+    HomeComponent,
+    AppEmailDirective
   ],
   imports: [
     BrowserModule,
