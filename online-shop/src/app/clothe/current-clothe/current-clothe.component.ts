@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from 'src/app/api.service';
+import { UserService } from 'src/app/user/user.service';
 import { Clothe } from 'src/types/clothe';
 
 @Component({
@@ -12,7 +13,12 @@ export class CurrentClotheComponent implements OnInit {
 
   clothe: Clothe | undefined;
 
-  constructor(private apiService: ApiService, private activatedRoute: ActivatedRoute){}
+  constructor(private apiService: ApiService, private activatedRoute: ActivatedRoute, private userService:UserService){}
+
+   
+  get isLoggedIn(): boolean {
+    return this.userService.isLogged;
+ }
 
 
   ngOnInit(): void {

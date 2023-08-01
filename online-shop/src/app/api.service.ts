@@ -8,6 +8,8 @@ import { Clothe } from 'src/types/clothe';
 })
 export class ApiService {
 
+  message: string | null = null;
+
   constructor(private http: HttpClient) { }
 
   getClothes() {
@@ -30,5 +32,12 @@ export class ApiService {
 
   dataSave(key: string, value: string): void {
     localStorage.setItem(key, value);
+  }
+
+  showMessage(text: string) {
+    this.message = text;
+    setTimeout(() => {
+      this.message = null;
+    }, 3000);
   }
 }

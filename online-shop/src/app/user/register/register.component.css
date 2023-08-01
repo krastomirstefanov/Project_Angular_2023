@@ -19,13 +19,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 60px;
-}
-
-.register-container h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-top: 50px;
 }
 
 .form-group {
@@ -46,6 +40,11 @@ body {
     border-radius: 5px;
 }
 
+.form-group .error {
+    color: red;
+    margin-top: 5px;
+}
+
 button {
     display: block;
     width: 100%;
@@ -57,21 +56,9 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
-button :hover {
+button:hover {
     background-color: #0056b3;
-}
-
-.register-container p {
-    text-align: center;
-}
-
-.register-container a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.register-container a:hover {
-    text-decoration: underline;
 }

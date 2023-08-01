@@ -5,10 +5,21 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" ngModel email required #emailInput="ngModel">
         </div>
+
+        <div *ngIf="emailInput.touched" class="messageField">
+            <div *ngIf="emailInput.errors?.['required']">Email is required!</div>
+            <div *ngIf="emailInput.errors?.['email']">Email is not valid!</div>
+        </div>
+
         <div class="form-group">
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required ngModel #passwordInput="ngModel">
         </div>
+
+        <div *ngIf="passwordInput.touched" class="messageField">
+            <div *ngIf="passwordInput.errors?.['required']">Password is required!</div>
+        </div>
+
         <button>Login</button>
     </form>
     <p>Don't have an account? <a routerLink="/register">Register here</a></p>

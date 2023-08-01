@@ -47,7 +47,10 @@ export class LoginComponent {
           this.router.navigate(['/']);
                    
         }
-      }})
-    this.router.navigate(['/home'])
+      },
+      error: (error) => {
+        this.api.showMessage(error.error.message);        
+      }
+    })
   }
 }

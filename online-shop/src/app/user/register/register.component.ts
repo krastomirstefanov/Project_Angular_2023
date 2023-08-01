@@ -48,7 +48,11 @@ export class RegisterComponent {
           console.log('Registered successfully!');
           this.router.navigate(['/']);
         }
-      }})
+      },
+      error: (error) => {
+        this.api.showMessage(error.error.message);        
+      }
+    })
       
   }
 }

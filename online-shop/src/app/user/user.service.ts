@@ -45,6 +45,9 @@ export class UserService {
 
   logout(): void {
     this.user = undefined;
-    localStorage.removeItem('accessToken')
+    localStorage.removeItem('accessToken');
+    localStorage.removeItem('username');
+    localStorage.removeItem('userEmail');
+    localStorage.removeItem('userId');
   }
 }

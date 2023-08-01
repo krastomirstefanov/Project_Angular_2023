@@ -75,3 +75,7 @@ button:hover {
 .login-container a:hover {
     text-decoration: underline;
 }
+
+.messageField{
+    margin-bottom: 20px;
+}
