@@ -1,5 +1,8 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { User } from 'src/types/user';
+import { environment } from 'src/environments/environment';
 
 
 
@@ -11,30 +14,37 @@ export class UserService {
   user: User | undefined;
   USER_KEY = '[user]';
 
+  isLoggedIn: boolean = false;
+
   get isLogged(): boolean {
-    return !!this.user;
+    return !!localStorage.getItem('accessToken');
   }
 
-  constructor() { 
+  constructor(private http: HttpClient) { 
     try {
-      const lsUser = localStorage.getItem(this.USER_KEY) || '';
+      const lsUser = localStorage.getItem('accessToken') || '';
       this.user = JSON.parse(lsUser)
     } catch (err) {
       this.user = undefined;
     }
   }
 
-  login(): void {
-    this.user = {
-      email: 'pesho@abv.bg',
-      password: '1234'
-    }
+  login(email: string, password: string): Observable<any> {
+    const {appUrl} = environment;
+    return this.http.post(`${appUrl}/users/login`, { email: email, password: password });
+  }
 
-    localStorage.setItem(this.USER_KEY, JSON.stringify(this.user))
+  register(username: string, email: string, password: string): Observable<any>{
+    const {appUrl} = environment;
+    return this.http.post(`${appUrl}/users/register`,{
+      email: email,
+      password: password,
+      username: username,
+    })
   }
 
   logout(): void {
     this.user = undefined;
-    localStorage.removeItem(this.USER_KEY)
+    localStorage.removeItem('accessToken')
   }
 }

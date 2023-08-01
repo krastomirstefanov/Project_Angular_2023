@@ -19,4 +19,16 @@ export class ApiService {
     const {appUrl} = environment;
     return this.http.get<Clothe>(`${appUrl}/data/clothes/${id}`)
   }
+
+
+  clearSessionData(): void {
+    localStorage.removeItem('accessToken');
+    localStorage.removeItem('userEmail');
+    localStorage.removeItem('userId');
+    localStorage.removeItem('');
+  }
+
+  dataSave(key: string, value: string): void {
+    localStorage.setItem(key, value);
+  }
 }
