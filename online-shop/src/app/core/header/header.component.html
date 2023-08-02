@@ -10,7 +10,11 @@
         <ul *ngIf="isLoggedIn">
             <a routerLink="/home">Home</a>
             <a routerLink="/catalog">Catalog</a>
-            <a routerLink="/cart">Cart</a>
+            <!-- <a routerLink="/cart">Cart</a>  -->
+            <button class="buy-button" routerLink="/cart">
+                <i class='fa-solid fa-cart-arrow-down'></i>
+            </button>
+            
             <a (click)="logout()">Logout</a>
         </ul>
     </nav>

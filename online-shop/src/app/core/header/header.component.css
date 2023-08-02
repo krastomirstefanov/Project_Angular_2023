@@ -6,6 +6,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header a {
@@ -19,13 +20,13 @@ header a:hover {
     border-radius: 5px;
 }
 
-/* Logo Styles */
+
 .header-logo {
     font-size: 24px;
     font-weight: bold;
 }
 
-/* Navigation Styles */
+
 .header-nav {
     display: flex;
 }

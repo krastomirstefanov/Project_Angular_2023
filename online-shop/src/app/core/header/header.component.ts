@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CartService } from 'src/app/clothe/cart.service';
 import { UserService } from 'src/app/user/user.service';
 
 @Component({
@@ -9,11 +10,20 @@ import { UserService } from 'src/app/user/user.service';
 })
 export class HeaderComponent {
 
-  constructor(private userService: UserService, private router: Router){}
+  public totalItem: number = 0
+  constructor(private userService: UserService, private router: Router, private cartService: CartService){}
+  
+  
+  // ngOnInit(): void {
+  //   this.cartService.getProducts().subscribe(res => {
+  //     this.totalItem = res.length
+  //   })
+  // }
     
   get isLoggedIn(): boolean {
      return this.userService.isLogged;
   }
+
   
 
   logout(): void {

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
 import { Clothe } from 'src/types/clothe';
 
+
 @Component({
   selector: 'app-clothes',
   templateUrl: './clothes.component.html',
@@ -9,7 +10,8 @@ import { Clothe } from 'src/types/clothe';
 })
 export class ClothesComponent implements OnInit{
 
-  clothesList: Clothe[] = []
+  clothesList: Clothe[] = [];
+ 
   constructor(private apiService: ApiService){}
   
   
@@ -20,7 +22,7 @@ export class ClothesComponent implements OnInit{
       },
       error: (err) => {
         console.error(`Error: ${err}`)
-      }
-    })
+      },
+  })
   }
 } 
