@@ -11,6 +11,7 @@ import { Clothe } from 'src/types/clothe';
 export class ClothesComponent implements OnInit{
 
   clothesList: Clothe[] = [];
+
  
   constructor(private apiService: ApiService){}
   

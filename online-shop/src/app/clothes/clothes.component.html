@@ -1,23 +1,16 @@
-<div class="clothes-container">
-    <div class="search-container">
-        <input type="text" class="search-bar" placeholder="search product">
-        <button class="search-button">Search</button>
-    </div>
-    
-    <ng-container *ngFor="let clothe of clothesList" class="clothes-name-wrapper">
-        <div class="clothes-name">
-            <a [routerLink]="clothe._id" class="normal">
-                <h2>{{clothe.name}}</h2>
-            </a>
-            <div class="columns">
-                <div class="clothes-image">
-                    <img src="{{clothe.imageUrl}}" alt="Jordan T-Shirt">
-                </div>
-                <div class="clothes-info">
-                    <p>Price: ${{clothe.price}}</p>
-                    <p>Size: {{clothe.size}}</p>
-                </div>
+<ng-container *ngFor="let clothe of clothesList" class="clothes-name-wrapper">
+    <div class="clothes-name">
+        <a [routerLink]="clothe._id" class="normal">
+            <h2>{{clothe.name}}</h2>
+        </a>
+        <div class="columns">
+            <div class="clothes-image">
+                <img src="{{clothe.imageUrl}}" alt="Jordan T-Shirt">
+            </div>
+            <div class="clothes-info">
+                <p>Price: ${{clothe.price}}</p>
+                <p>Size: {{clothe.size}}</p>
             </div>
         </div>
-    </ng-container>
-</div>
+    </div>
+</ng-container>

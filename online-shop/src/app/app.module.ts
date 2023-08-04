@@ -10,6 +10,8 @@ import { ClothesComponent } from './clothes/clothes.component';
 import { HomeComponent } from './home/home.component';
 import { UserModule } from './user/user.module';
 import { ClotheModule } from './clothe/clothe.module';
+import { NotFoundComponent } from './not-found/not-found.component';
+
 
 
 
@@ -19,6 +21,8 @@ import { ClotheModule } from './clothe/clothe.module';
     MainComponent,
     ClothesComponent,
     HomeComponent,
+    NotFoundComponent,
+    
     
   ],
   imports: [

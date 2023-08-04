@@ -4,6 +4,7 @@ import { ClothesComponent } from '../clothes/clothes.component';
 import { CartComponent } from './cart/cart.component';
 import { CurrentClotheComponent } from './current-clothe/current-clothe.component';
 import { AuthActivate } from 'src/guards/auth.activate';
+import { NotFoundComponent } from '../not-found/not-found.component';
 
 
 
@@ -27,8 +28,9 @@ const routes: Routes = [
     {
         path: 'cart',
         component: CartComponent,
-        canActivate: [AuthActivate]
-    }
+        
+    },
+ 
 ];
 
 @NgModule({
