@@ -3,5 +3,6 @@ export interface Clothe {
     imageUrl: string,
     price: string,
     size: string,
-    _id: string
+    _id: string,
+    details: string[]
 }

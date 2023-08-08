@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { UserModule } from './user/user.module';
 import { ClotheModule } from './clothe/clothe.module';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { BuyNowComponent } from './buy-now/buy-now.component';
 
 
 
@@ -22,6 +23,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ClothesComponent,
     HomeComponent,
     NotFoundComponent,
+    BuyNowComponent,
     
     
   ],

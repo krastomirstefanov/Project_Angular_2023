@@ -7,6 +7,7 @@ import { CurrentClotheComponent } from './clothe/current-clothe/current-clothe.c
 import { CartComponent } from './clothe/cart/cart.component';
 import { LoginComponent } from './user/login/login.component';
 import { RegisterComponent } from './user/register/register.component';
+import { BuyNowComponent } from './buy-now/buy-now.component';
 
 const routes: Routes = [
   {
@@ -42,12 +43,16 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
-    // canActivate: [AuthActivate]
+   
 },
 {
     path: 'register',
     component: RegisterComponent,
-    // canActivate: [AuthActivate]
+    
+},
+{
+  path: 'buy-now',
+  component: BuyNowComponent
 },
   {
     path: '**',

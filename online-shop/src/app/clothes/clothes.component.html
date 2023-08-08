@@ -1,11 +1,13 @@
 <div *ngFor="let clothe of clothesList" class="clothes-name-wrapper">
     <div class="clothes-name">
-        <a [routerLink]="clothe._id" class="normal">
+        
             <h2>{{clothe.name}}</h2>
-        </a>
+   
         <div class="columns">
             <div class="clothes-image">
-                <img src="{{clothe.imageUrl}}" alt="Jordan T-Shirt">
+                <a [routerLink]="clothe._id" class="normal">
+                    <img src="{{clothe.imageUrl}}" alt="Jordan T-Shirt">
+                </a>
             </div>
             <div class="clothes-info">
                 <p>Price: ${{clothe.price}}</p>

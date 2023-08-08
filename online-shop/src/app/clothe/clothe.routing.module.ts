@@ -5,6 +5,7 @@ import { CartComponent } from './cart/cart.component';
 import { CurrentClotheComponent } from './current-clothe/current-clothe.component';
 import { AuthActivate } from 'src/guards/auth.activate';
 import { NotFoundComponent } from '../not-found/not-found.component';
+import { BuyNowComponent } from '../buy-now/buy-now.component';
 
 
 
@@ -30,6 +31,10 @@ const routes: Routes = [
         component: CartComponent,
         
     },
+    {
+        path: 'buy-now',
+        component: BuyNowComponent
+    }
  
 ];
 
