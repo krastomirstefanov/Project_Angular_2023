@@ -11,7 +11,7 @@
                         <th>Price</th>
                         <th>Quantity</th>
                         <th>Total</th>
-                        
+
                     </tr>
                 </thead>
                 <tbody>
@@ -21,7 +21,7 @@
                         <td><img style="width: 120px;" src="{{clothe.imageUrl}}" alt=""></td>
                         <td>Very good for this season</td>
                         <th>{{clothe.price}}</th>
-                        <td>{{quantity + 1}}</td>
+                        <td>{{quantity}}</td>
                         <td>{{clothe.total}}</td>
                         <td>
                             <button (click)="removeItem(clothe)" class="delete-btn">Delete</button>
@@ -45,7 +45,7 @@
         <div class="card">
             <h5 class="card-title">My Cart</h5>
             <div class="center">
-                
+
                 <h4>Your cart is empty!</h4>
                 <h6>Add item to it!</h6>
                 <button class="shop-now" routerLink="/catalog">Go shop!</button>

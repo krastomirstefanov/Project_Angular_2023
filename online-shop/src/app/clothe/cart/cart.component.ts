@@ -30,5 +30,8 @@ export class CartComponent implements OnInit {
     this.cartService.removeAll();
   }
 
+  increaseQuantity() {
+    this.product.quantity++;
+  }
 
 }
