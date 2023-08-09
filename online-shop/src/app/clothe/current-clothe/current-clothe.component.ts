@@ -13,6 +13,8 @@ import { CartService } from '../cart.service';
 export class CurrentClotheComponent implements OnInit {
 
     clothe: Clothe | undefined;
+    addingToCart!: boolean;
+
 
     constructor(private apiService: ApiService, private activatedRoute: ActivatedRoute, private userService: UserService, private cartService: CartService) { }
 
@@ -35,7 +37,12 @@ export class CurrentClotheComponent implements OnInit {
     }
 
     addToCart(clothe:any){
-        this.cartService.addToCart(clothe); 
+        this.cartService.addToCart(clothe);
+        this.addingToCart = true;
+
+        setTimeout(()=> {
+            this.addingToCart = false;
+        }, 900);
     }
 
 }

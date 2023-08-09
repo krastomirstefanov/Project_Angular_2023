@@ -16,7 +16,9 @@
                         <li>{{clothe.details[1]}}</li>
                         <li>{{clothe.details[2]}}</li>
                     </ul>
-                    <button *ngIf="isLoggedIn" class="add-to-cart" (click)="addToCart(clothe)">Add to Cart</button>
+                    <button *ngIf="isLoggedIn" class="add-to-cart" (click)="addToCart(clothe)">
+                        {{addingToCart ? 'Adding... ' : 'Add to cart'}}
+                    </button>
                 </div>
             </div>
         </div>
