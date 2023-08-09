@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .centered-text {
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  
