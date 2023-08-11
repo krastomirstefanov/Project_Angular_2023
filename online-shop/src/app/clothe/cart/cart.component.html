@@ -19,9 +19,9 @@
                         <td>{{i+1}}</td>
                         <td>{{clothe.name}}</td>
                         <td><img style="width: 120px;" src="{{clothe.imageUrl}}" alt=""></td>
-                        <td>Very good for this season</td>
+                        <td>{{clothe.details}}</td>
                         <th>{{clothe.price}}</th>
-                        <td>{{quantity}}</td>
+                        <td>{{clothe.quantity}}</td>
                         <td>{{clothe.total}}</td>
                         <td>
                             <button (click)="removeItem(clothe)" class="delete-btn">Delete</button>

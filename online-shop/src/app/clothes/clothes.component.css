@@ -36,6 +36,13 @@
   .clothes-image img {
     max-width: 100px;
     height: auto;
+    transition: 0.3s ease-in-out;
+  }
+
+
+  .clothes-image:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
   }
   
   

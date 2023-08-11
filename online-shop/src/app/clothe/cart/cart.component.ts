@@ -10,15 +10,18 @@ export class CartComponent implements OnInit {
 
   public product: any = [];
   public total : number = 0;
-  public quantity: number = 0; 
 
   constructor(private cartService: CartService){}
 
   ngOnInit(): void {
     this.cartService.getProducts().subscribe(res => {
-      this.product = res;
+      this.product = res;     
       this.total = this.cartService.totalPrice();
-      this.quantity += this.quantity;
+      
+
+      this.product.forEach((element : any) => {
+        Object.assign(element, {quantity: 1, total: element.price});
+      });
     })
   }
 

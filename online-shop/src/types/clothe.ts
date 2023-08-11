@@ -4,5 +4,7 @@ export interface Clothe {
     price: string,
     size: string,
     _id: string,
-    details: string[]
+    details: string[],
+    quantity: string,
+    totalPrice: string,
 }
