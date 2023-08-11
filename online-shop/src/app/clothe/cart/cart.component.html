@@ -21,7 +21,10 @@
                         <td><img style="width: 120px;" src="{{clothe.imageUrl}}" alt=""></td>
                         <td>{{clothe.details}}</td>
                         <th>{{clothe.price}}</th>
-                        <td>{{clothe.quantity}}</td>
+                        <td>
+                            <button (click)="decreaseQuantity(clothe)" class="quantity-btn">-</button>
+                            {{clothe.quantity}}
+                            <button (click)="increaseQuantity(clothe)" class="quantity-btn">+</button></td>
                         <td>{{clothe.total}}</td>
                         <td>
                             <button (click)="removeItem(clothe)" class="delete-btn">Delete</button>

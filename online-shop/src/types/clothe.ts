@@ -1,10 +1,9 @@
 export interface Clothe {
     name: string,
     imageUrl: string,
-    price: string,
+    price: number,
     size: string,
     _id: string,
     details: string[],
-    quantity: string,
-    totalPrice: string,
+    
 }

@@ -15,12 +15,11 @@ export class CartComponent implements OnInit {
 
   ngOnInit(): void {
     this.cartService.getProducts().subscribe(res => {
-      this.product = res;     
+      this.product = res;    
       this.total = this.cartService.totalPrice();
       
-
       this.product.forEach((element : any) => {
-        Object.assign(element, {quantity: 1, total: element.price});
+        Object.assign(element, { quantity: 1, total: element.price});
       });
     })
   }
@@ -33,8 +32,22 @@ export class CartComponent implements OnInit {
     this.cartService.removeAll();
   }
 
-  increaseQuantity() {
-    this.product.quantity++;
+  increaseQuantity(clothe:any) {
+    clothe.quantity++;
+    this.calculateTotal(clothe.price);
   }
 
+  decreaseQuantity(clothe: any){
+    if(clothe.quantity > 1){
+      clothe.quantity--;
+    }
+
+    this.calculateTotal(clothe.price);
+  }
+
+  calculateTotal(p : any){
+    p.total = p.quantity * p.price;
+    this.total = p.total;
+  }
+ 
 }

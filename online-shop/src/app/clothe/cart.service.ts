@@ -15,16 +15,10 @@ export class CartService {
     return this.productList.asObservable();
   };
 
-  setProducts(product: any) {
-    this.cartListItem.push(...product);
-    this.productList.next(product);
-  }
-
   addToCart(product: any){
     this.cartListItem.push(product);
     this.productList.next(this.cartListItem);
     this.totalPrice();
-    console.log(this.productList)
   };
 
   totalPrice(): number {
@@ -34,7 +28,6 @@ export class CartService {
     })
     return result;
   };
-
 
   removeItem(p: any){
     this.cartListItem.map((product:any, index: any) => {
