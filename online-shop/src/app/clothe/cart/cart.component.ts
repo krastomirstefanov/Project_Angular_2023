@@ -33,8 +33,9 @@ export class CartComponent implements OnInit {
   }
 
   increaseQuantity(clothe:any) {
+    
     clothe.quantity++;
-    this.calculateTotal(clothe.price);
+    this.calculateTotal(Number(clothe.price));
   }
 
   decreaseQuantity(clothe: any){
@@ -45,9 +46,10 @@ export class CartComponent implements OnInit {
     this.calculateTotal(clothe.price);
   }
 
-  calculateTotal(p : any){
-    p.total = p.quantity * p.price;
-    this.total = p.total;
+  calculateTotal(p: any){
+    
+    this.total = p.quantity * p.price;
+    
   }
  
 }
