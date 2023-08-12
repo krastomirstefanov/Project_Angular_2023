@@ -1428,11 +1428,13 @@
         email: 'peter@abv.bg',
         hashedPassword:
           '83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1',
+        
       },
       '847ec027-f659-4086-8032-5173e2f9c93a': {
         email: 'john@abv.bg',
         hashedPassword:
           '83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1',
+        
       },
     },
     sessions: {},
@@ -1487,27 +1489,222 @@
         name: "Jordan",
         imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzK57__5PPhoN-ERQufZuJhpfUL_Htz9Hbaw&usqp=CAU",
         price: "120,00$",
-        size: "M"
+        size: "M",
+        details: [
+          "Unmatched Comfort",
+          "Stylish Variety",
+          "Unique Designs",
+        ]
       },
       "1840a313-225c-416a-81ca-9954e5609l7c": {
         name: "Tommy Hilfiger",
-        imageUrl: "ht tps://cdn.aboutstatic.com/file/images/39ca4a9f0da57ddae9a1ee7f683c7637.jpg?quality=75&height=480&width=360",
+        imageUrl: "data:image/jpeg;base64,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",
         price: "320,00$",
-        size: "L"
+        size: "L",
+        details: [
+          "Unmatched Comfort",
+          "Stylish Variety",
+          "Unique Designs",
+        ]
       },
       "18j0a313-225c-416a-81ca-9954e5609l7c": {
         name: "Hugo",
-        imageUrl: "https://cdn.aboutstatic.com/file/images/6328393abe4cf171beb0a89a9a113725.jpg?quality=75&height=480&width=360",
+        imageUrl: "https://static.glami.bg/img/228x298be/409851052.webp",
         price: "150,00$",
-        size: "S"
+        size: "S",
+        details: [
+          "Unmatched Comfort",
+          "Stylish Variety",
+          "Unique Designs",
+        ]
       },
       "a8j0a313-225c-416a-81ca-9954e5609l7c": {
         name: "Lacoste",
-        imageUrl: "https://cdn.aboutstatic.com/file/2528fb81ed4b321a5ef9a94f38acd6af?quality=75&height=480&width=360",
+        imageUrl: "https://static.glami.bg/img/228x298be/234471347.webp",
         price: "166,00$",
-        size: "M"
+        size: "M",
+        details: [
+          "Unmatched Comfort",
+          "Stylish Variety",
+          "Unique Designs",
+        ]
       },
-
+      "875ee7a2-5168-4fcc-a2fa-da5d8e64db0c": {
+        name: "Adidas T-shirt",
+        imageUrl: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIcAhwMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAQIEAwUHBv/EADQQAAIBAwIDBwIFAwUAAAAAAAABAgMEEQUSITFBBhMiMlFhcTOBFEJSkaEHFmIVI0Nywf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABcRAQEBAQAAAAAAAAAAAAAAAAABESH/2gAMAwEAAhEDEQA/APuIAAAHKtWjTXVy6JAdSHJRWZNJe7MFWvcz4RxBe3P9zi6Lk8zbk/WTyXBtneUk9sHvl7cv3MVfUK9Cu1PGx8ViDZeNOMX0Oy7uaxPDTRcHJalFrjOmn9yJ6g20qdSHH0i2YNS0FXrTo39a2eVlwjGXLpxRrtdPoWcYZnKrOHKUuf7chxG2ldKKSr8H+pcjRGUZLMWmvVMwSW7nFYOapYeYNxfrF4JivVB56q3MHwmpL/JGijcbntqR2y6ejGDQACAAAAAAiUlGLk+SWTHCO5ucubZoufIl+p4KRXhRYIlH2K7ToyCoq4r0RG1eiOuPYrj2A5uPsNuD8Hp39Q1eduZ6SoU1pk5O3oVsPc6qfmb/AEt5S4fpfU+gYAptyw4l8BoCiisipBNciyXEheJvHJAdrebnSTfPkzoZrV43LoaTKgAAAADjU41Yr0TZVcI/Ai91ST98Ey4RkWIj8vEkrF+D7kso+cf1attYjd6Xf6NLUMpTpS/Bd45J5TTahx9Tr2S7S9pLixurHXNH1Lv1bTlbXcrKpDfJRb2z8OM+j68ufP8Ae3tpSvbWdvX3d3PGdtSUHweVxi0/5PwOu2dDQId7qStY0X/zxtLupGPzJVfD9yK+X0NN1i0r0a/+l6hCpSnGot9pUi9yafVH1Pt328vNNuamn6FaylWhwq3c6TcYv0isYb9+Xyee7jToxqSnfd3CjbwuZShcajRiqc8bZZjUa47l/Poz09AoVNWhGrpVapWtNy3VlrF8uH+PeQak/bIHP+k97rWqvVNQ1e9uK9FunSoqrLwqS3OWI8lwceX/AIfQWznb0Y21vClGdSaisbqkt0pe7ZafmSLEJvaRD6Lx1fArcvEW/Y6RjinFeiFEw8OH7mgzryneLykRUgAgEPlw5kgDjCDjFJoT8j+DsRgDLTeYRLy5DCU2vcM0jyNX196fWrULbT7m+q29t+KrxpShFU6bclHjJrLeyXBenxnytR7VXk7Ojc6dYyhbSvba3qXU6kXhzqQU4qHNrxbc+vHGOJ7Wq9ntO1at315Trb3T7qbo150u9p8Xsnta3Ry3wfDi/VnOXZbRpVqdWVo805U5qKqzUd8MbZOOcOS2ri1ngRX5y/7VXH9qX11ZaX+KqWdhGrXrVFTUKc3DfFbPzJJqTxyT4ZZ7f91U43EU9MvvwUriVtC9Sh3cpxzu8O7elmMlnbxx8Z63fZHRLyh3Fa0kqTpKjKFOvUgqkFyUlGS3Y6Zzgmp2W0ypeq6xdQkqzrqlTu6kaSqPOZKCe1N5fFLq3zA66Hr1tr1rOvaU6sIJRknPa1KMs4acW1nhxi3uXVI9Cbyos8/R9As9Iubm5t51qle4p06dSpVkm3GG7auCWX4nxeW+rNzfDHoWIreSSp5NCTcV8HNUoV2o1FmPPmakklyJVUUS0FtWCwIAAAAAAAAOE1/uSK9UXq+ZlY+Y0i4ARADAYDoZ6ixNndHKuupRa180vg0me1/N9jQSqAAgAAAAAAAA41vMVhzZat5l8EU+RRYIMLkEAwRkAUqrMCWJcYMoWvORoM9rzl8I0EqgAIAAAAAAAAONXzfYin5RW832Jj5SiWER1JCBDJIYFZch0J5orkoi0+pNGozWv1JmklUABAAAAAAAABnr+f7Fo8itf6i+CVyKHUt0Kot0CCKskFEIpLgyVzaIqcgItPqy+DWY7T60v+psJVAAQAAAAAAAAc6lPc0+o7trqiABKg/YnaAA2DZ7gAV7t7s5EqTf5v4AAUqPdycs5b4HUAAAAAAA/9k=",
+        price: "446,00$",
+        size: "L",
+        details: [
+          "Unmatched Comfort",
+          "Stylish Variety",
+          "Unique Designs",
+        ]
+      },
+      "314cd9eb-9ff9-44e0-809a-ce9870bc3cbf": {
+        name: "Nike",
+        imageUrl: "https://cdn.sportdepot.bg/files/catalog/list/NIKE-BV2645-410_01.jpg",
+        price: "346,00$",
+        size: "S",
+        details: [
+          "Unmatched Comfort",
+          "Stylish Variety",
+          "Unique Designs",
+        ]
+      },
+      "f5530cb3-ead2-47fe-a4cd-674aae69efdb": {
+        name: "Nike T-shirt",
+        imageUrl: "https://cdn.sportdepot.bg/files/catalog/list/AR4997-064_01.jpg",
+        price: "99,00$",
+        size: "L",
+        details: [
+          "Unmatched Comfort",
+          "Stylish Variety",
+          "Unique Designs",
+        ]
+      },
+      "c6dff473-1c03-43a9-9835-ac537b819909": {
+        name: "Puma",
+        imageUrl: "https://static.glami.bg/img/228x298be/326289652.webp",
+        price: "178,00$",
+        size: "XL",
+        details: [
+          "Unmatched Comfort",
+          "Stylish Variety",
+          "Unique Designs",
+        ]
+      },
+      "fc744b94-31db-4743-9926-ac1768d87414": {
+        name: "G-STAR RAW",
+        imageUrl: "https://cdn.aboutstatic.com/file/images/1eaa8c83b7f43970e7b94fe0336bcb94.png?bg=F4F4F5&quality=75&trim=1&height=1280&width=960",
+        price: "566,00$",
+        size: "L",
+        details: [
+          "Unmatched Comfort",
+          "Stylish Variety",
+          "Unique Designs",
+        ]
+      },
+      "d01b1449-5c23-46be-a3ba-bf27d8f40d65": {
+        name: "Jack & Jones",
+        imageUrl: "https://cdn.aboutstatic.com/file/5ba6cdc0740b4ac6369ad343ba384190?brightness=0.96&quality=75&trim=1&height=1280&width=960",
+        price: "112,00$",
+        size: "L",
+        details: [
+          "Unmatched Comfort",
+          "Stylish Variety",
+          "Unique Designs",
+        ]
+      },
+      "40c7d22d-746b-415b-8230-494815252f75": {
+        name: "Karl Lagerfeld",
+        imageUrl: "https://cdn.aboutstatic.com/file/images/536e1a0402491f2d5f410a3c18a1940f.png?bg=F4F4F5&quality=75&trim=1&height=1280&width=960",
+        price: "323,00$",
+        size: "M",
+        details: [
+          "Unmatched Comfort",
+          "Stylish Variety",
+          "Unique Designs",
+        ]
+      },
+      "d5435717-89f5-4b19-9d5f-dbac56b9534f": {
+        name: "Nike Sportswear",
+        imageUrl: "https://cdn.aboutstatic.com/file/ddbdf6926658b37bb6e71121e9b4f3cb?bg=F4F4F5&quality=75&trim=1&height=1280&width=960",
+        price: "206,00$",
+        size: "L",
+        details: [
+          "Unmatched Comfort",
+          "Stylish Variety",
+          "Unique Designs",
+        ]
+      },
+      "43b9a320-c39b-4ebd-9e18-a56f11bfdb42": {
+        name: "Guess",
+        imageUrl: "https://cdn.aboutstatic.com/file/images/7a1ea5f05cbf12854e7982abc00301b5.png?bg=F4F4F5&quality=75&trim=1&height=1280&width=960",
+        price: "178,00$",
+        size: "S",
+        details: [
+          "Unmatched Comfort",
+          "Stylish Variety",
+          "Unique Designs",
+        ]
+      },
+      "40657a3c-50d7-4b98-be47-44ef82d09872": {
+        name: "Levi'S",
+        imageUrl: "https://cdn.aboutstatic.com/file/d6a32bfb7d76e3aeae061ba6d2ea5b9c?bg=F4F4F5&quality=75&trim=1&height=1280&width=960",
+        price: "256,00$",
+        size: "S",
+        details: [
+          "Unmatched Comfort",
+          "Stylish Variety",
+          "Unique Designs",
+        ]
+      },
+      "3c20ebe4-b215-41bc-87eb-4bf2f3ef3986": {
+        name: "The North Face",
+        imageUrl: "https://cdn.aboutstatic.com/file/images/099cfdd61535368b833ab62a00483ee2.png?bg=F4F4F5&quality=75&trim=1&height=1280&width=960",
+        price: "756,00$",
+        size: "M",
+        details: [
+          "Unmatched Comfort",
+          "Stylish Variety",
+          "Unique Designs",
+        ]
+      },
+      "b11fbb5e-d152-49c4-a799-493d38410bfe": {
+        name: "Adidas",
+        imageUrl: "https://cdn.aboutstatic.com/file/images/4584692f6ceb92c1be16fd10ffbd6fbb.png?bg=F4F4F5&quality=75&trim=1&height=1280&width=960",
+        price: "322,00$",
+        size: "XL",
+        details: [
+          "Unmatched Comfort",
+          "Stylish Variety",
+          "Unique Designs",
+        ]
+      },
+      "9894224a-2cb5-47bc-983d-c72e80ed8931": {
+        name: "Champion",
+        imageUrl: "https://cdn.aboutstatic.com/file/images/2480d728c3b24926ee522ec4958160c9.png?bg=F4F4F5&quality=75&trim=1&height=1280&width=960",
+        price: "134,00$",
+        size: "L",
+        details: [
+          "Unmatched Comfort",
+          "Stylish Variety",
+          "Unique Designs",
+        ]
+      },
+      "bf60168b-6b77-4329-9deb-ca1f88682290": {
+        name: "Marc O'Polo",
+        imageUrl: "https://cdn.aboutstatic.com/file/images/35f2476c8d7426ca579bda9edb2277de.jpg?brightness=0.96&quality=75&trim=1&height=1280&width=960",
+        price: "371,00$",
+        size: "S",
+        details: [
+          "Unmatched Comfort",
+          "Stylish Variety",
+          "Unique Designs",
+        ]
+      },
+      "0a1b8ba3-634d-4074-b0d0-361421ba58ed": {
+        name: "Calvin Klein Jeans",
+        imageUrl: "https://cdn.aboutstatic.com/file/images/b86e69c881781b26eb5b3f9a223f373b.png?bg=F4F4F5&quality=75&trim=1&height=1280&width=960",
+        price: "272,00$",
+        size: "L",
+        details: [
+          "Unmatched Comfort",
+          "Stylish Variety",
+          "Unique Designs",
+        ]
+      },
+      "a0edb72a-4b8f-402d-8acd-f0ad27f52967": {
+        name: "Champion",
+        imageUrl: "https://cdn.aboutstatic.com/file/images/4fe6d7b9c2834c4ec6bfda5f81262534.png?bg=F4F4F5&quality=75&trim=1&height=1280&width=960",
+        price: "355,00$",
+        size: "L",
+        details: [
+          "Unmatched Comfort",
+          "Stylish Variety",
+          "Unique Designs",
+        ]
+      },
       
     },
     job: {
