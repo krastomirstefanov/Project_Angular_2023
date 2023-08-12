@@ -25,7 +25,6 @@ export class ApiService {
 
   clearSessionData(): void {
     localStorage.removeItem('accessToken');
-    localStorage.removeItem('userEmail');
     localStorage.removeItem('userId');
     localStorage.removeItem('');
   }
@@ -34,10 +33,5 @@ export class ApiService {
     localStorage.setItem(key, value);
   }
 
-  showMessage(text: string) {
-    this.message = text;
-    setTimeout(() => {
-      this.message = null;
-    }, 3000);
-  }
+  
 }

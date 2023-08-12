@@ -39,7 +39,6 @@ export class LoginComponent {
           this.userService.isLoggedIn = true;
 
           this.api.dataSave('accessToken', response.accessToken);
-          this.api.dataSave('userEmail', response.email);
           this.api.dataSave('userId', response._id);
           this.api.dataSave('username', response.username);
 
@@ -49,7 +48,7 @@ export class LoginComponent {
         }
       },
       error: (error) => {
-        this.api.showMessage(error.error.message);        
+        console.error(error)    
       }
     })
   }

@@ -24,8 +24,6 @@ import { BuyNowComponent } from './buy-now/buy-now.component';
     HomeComponent,
     NotFoundComponent,
     BuyNowComponent,
-    
-    
   ],
   imports: [
     BrowserModule,

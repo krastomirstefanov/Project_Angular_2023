@@ -12,7 +12,7 @@ import { environment } from 'src/environments/environment';
 export class UserService {
 
   user: User | undefined;
-  USER_KEY = '[user]';
+  
 
   isLoggedIn: boolean = false;
 

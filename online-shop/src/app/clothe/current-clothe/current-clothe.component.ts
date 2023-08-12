@@ -22,12 +22,10 @@ export class CurrentClotheComponent implements OnInit {
     get isLoggedIn(): boolean {
         return this.userService.isLogged;
     }
-
-
+    
     ngOnInit(): void {
         this.fetchTheme()
     }
-
 
     fetchTheme(): void {
         const id = this.activatedRoute.snapshot.params['clotheId'];

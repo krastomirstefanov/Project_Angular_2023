@@ -3,8 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { ClothesComponent } from '../clothes/clothes.component';
 import { CartComponent } from './cart/cart.component';
 import { CurrentClotheComponent } from './current-clothe/current-clothe.component';
-import { AuthActivate } from 'src/guards/auth.activate';
-import { NotFoundComponent } from '../not-found/not-found.component';
 import { BuyNowComponent } from '../buy-now/buy-now.component';
 
 

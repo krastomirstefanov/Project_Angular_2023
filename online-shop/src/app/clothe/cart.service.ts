@@ -18,16 +18,16 @@ export class CartService {
   addToCart(product: any){
     this.cartListItem.push(product);
     this.productList.next(this.cartListItem);
-    this.totalPrice();
+    // this.totalPrice();
   };
 
-  totalPrice(): number {
-    let result = 0;
-    this.cartListItem.map((p: any) => {
-      result += p.total;
-    })
-    return result;
-  };
+  // totalPrice(): number {
+  //   let result = 0;
+  //   this.cartListItem.map((p: any) => {
+  //     result += p.total;
+  //   })
+  //   return result;
+  // };
 
   removeItem(p: any){
     this.cartListItem.map((product:any, index: any) => {
